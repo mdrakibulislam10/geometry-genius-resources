@@ -29,7 +29,7 @@
                 </div>
 
                 <div class="">
-                    <button class="rounded py-2 px-8 text-white font-semibold bg-blue-600">Blog</button>
+                    <button id="blog-btn" class="rounded py-2 px-8 text-white font-semibold bg-blue-600">Blog</button>
                 </div>
             </div>
         </nav>
@@ -37,7 +37,7 @@
 
     <main>
         <section>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+            <div class="grid grid-cols-1 md:grid-cols-4 justify-center gap-5">
                 <!-- cards -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 col-span-3 gap-5">
                     <!-- Triangle -->
@@ -47,18 +47,20 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Triangle</h2>
-                            <p class="mt-2 mb-5">Area (A) = 0.5 X <span>b</span> X <span>h</span></p>
+                            <p class="mt-2 mb-5">Area (A) = 0.5 &#215; <span>b</span> &#215; <span>h</span></p>
 
                             <p class="text-black">
                                 <input type="text" placeholder="b"
-                                    class="placeholder:text-black w-20 bg-slate-300 p-1 rounded-md" id=""> cm
+                                    class="placeholder:text-black w-20 bg-slate-300 p-1 rounded-md"
+                                    id="triangle-first-input"> cm
 
                                 <input type="text" placeholder="h"
-                                    class="placeholder:text-black w-20 bg-slate-300 p-1 rounded-md ml-1" id="">
+                                    class="placeholder:text-black w-20 bg-slate-300 p-1 rounded-md ml-1"
+                                    id="triangle-second-input">
                                 cm
                             </p>
 
-                            <button
+                            <button id="triangle-calc-btn"
                                 class="rounded py-3 px-8 my-11 text-white font-semibold bg-blue-600 w-full">Calculate</button>
                         </div>
                     </div>
@@ -69,18 +71,20 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Rectangle</h2>
-                            <p class="mt-2 mb-5">Area (A) = <span>w</span> X <span>l</span></p>
+                            <p class="mt-2 mb-5">Area (A) = <span>w</span> &#215; <span>l</span></p>
 
                             <p class="text-black">
                                 <input type="text" placeholder="w"
-                                    class="placeholder:text-black w-20 bg-slate-300 p-1 rounded-md" id=""> cm
+                                    class="placeholder:text-black w-20 bg-slate-300 p-1 rounded-md"
+                                    id="rectangle-first-input"> cm
 
                                 <input type="text" placeholder="l"
-                                    class="placeholder:text-black w-20 bg-slate-300 p-1 rounded-md ml-1" id="">
+                                    class="placeholder:text-black w-20 bg-slate-300 p-1 rounded-md ml-1"
+                                    id="rectangle-second-input">
                                 cm
                             </p>
 
-                            <button
+                            <button id="rectangle-calc-btn"
                                 class="rounded py-3 px-8 my-11 text-white font-semibold bg-blue-600 w-full">Calculate</button>
                         </div>
                     </div>
@@ -91,18 +95,20 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Parallelogram</h2>
-                            <p class="mt-2 mb-5">Area (A) = <span>b</span> X <span>h</span></p>
+                            <p class="mt-2 mb-5">Area (A) = <span>b</span> &#215; <span>h</span></p>
 
                             <p class="text-black">
                                 <input type="text" placeholder="b"
-                                    class="placeholder:text-black w-20 bg-slate-300 p-1 rounded-md" id=""> cm
+                                    class="placeholder:text-black w-20 bg-slate-300 p-1 rounded-md"
+                                    id="parallelogram-first-input"> cm
 
                                 <input type="text" placeholder="h"
-                                    class="placeholder:text-black w-20 bg-slate-300 p-1 rounded-md ml-1" id="">
+                                    class="placeholder:text-black w-20 bg-slate-300 p-1 rounded-md ml-1"
+                                    id="parallelogram-second-input">
                                 cm
                             </p>
 
-                            <button
+                            <button id="parallelogram-calc-btn"
                                 class="rounded py-3 px-8 my-11 text-white font-semibold bg-blue-600 w-full">Calculate</button>
                         </div>
                     </div>
@@ -113,20 +119,22 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Rhombus</h2>
-                            <p class="mt-2 mb-5">Area (A) = 0.5 X <span>d<sub>1</sub></span> X
+                            <p class="mt-2 mb-5">Area (A) = 0.5 &#215; <span>d<sub>1</sub></span> &#215;
                                 <span>d<sub>2</sub></span>
                             </p>
 
                             <p class="text-black">
                                 <input type="text" placeholder="d1"
-                                    class="placeholder:text-black w-20 bg-slate-300 p-1 rounded-md" id=""> cm
+                                    class="placeholder:text-black w-20 bg-slate-300 p-1 rounded-md"
+                                    id="rhombus-first-input"> cm
 
                                 <input type="text" placeholder="d2"
-                                    class="placeholder:text-black w-20 bg-slate-300 p-1 rounded-md ml-1" id="">
+                                    class="placeholder:text-black w-20 bg-slate-300 p-1 rounded-md ml-1"
+                                    id="rhombus-second-input">
                                 cm
                             </p>
 
-                            <button
+                            <button id="rhombus-calc-btn"
                                 class="rounded py-3 px-8 my-11 text-white font-semibold bg-blue-600 w-full">Calculate</button>
                         </div>
                     </div>
@@ -137,18 +145,20 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Pentagon</h2>
-                            <p class="mt-2 mb-5">Area (A) = 0.5 X <span>p</span> X <span>b</span></p>
+                            <p class="mt-2 mb-5">Area (A) = 0.5 &#215; <span>p</span> &#215; <span>b</span></p>
 
                             <p class="text-black">
                                 <input type="text" placeholder="p"
-                                    class="placeholder:text-black w-20 bg-slate-300 p-1 rounded-md" id=""> cm
+                                    class="placeholder:text-black w-20 bg-slate-300 p-1 rounded-md"
+                                    id="pentagon-first-input"> cm
 
                                 <input type="text" placeholder="b"
-                                    class="placeholder:text-black w-20 bg-slate-300 p-1 rounded-md ml-1" id="">
+                                    class="placeholder:text-black w-20 bg-slate-300 p-1 rounded-md ml-1"
+                                    id="pentagon-second-input">
                                 cm
                             </p>
 
-                            <button
+                            <button id="pentagon-calc-btn"
                                 class="rounded py-3 px-8 my-11 text-white font-semibold bg-blue-600 w-full">Calculate</button>
                         </div>
                     </div>
@@ -163,22 +173,39 @@
 
                             <p class="text-black">
                                 <input type="text" placeholder="a"
-                                    class="placeholder:text-black w-20 bg-slate-300 p-1 rounded-md" id=""> cm
+                                    class="placeholder:text-black w-20 bg-slate-300 p-1 rounded-md"
+                                    id="ellipse-first-input"> cm
 
                                 <input type="text" placeholder="b"
-                                    class="placeholder:text-black w-20 bg-slate-300 p-1 rounded-md ml-1" id="">
+                                    class="placeholder:text-black w-20 bg-slate-300 p-1 rounded-md ml-1"
+                                    id="ellipse-second-input">
                                 cm
                             </p>
 
-                            <button
+                            <button id="ellipse-calc-btn"
                                 class="rounded py-3 px-8 my-11 text-white font-semibold bg-blue-600 w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- calculation -->
-                <div class="border border-slate-400 h-screen rounded-lg">
+                <div class="border border-slate-400 ml-7 md:ml-0 h-screen rounded-lg">
                     <h3 class="font-semibold underline underline-offset-4 text-center mt-6">Area Calculation</h3>
+
+                    <div class="mt-4">
+                        <table id="calculation-results" class="table table-compact w-full">
+                            <!-- <tbody>
+                                <tr>
+                                    <td>1<span>.</span></td>
+                                    <td>Triangle</td>
+                                    <td>12cm<sup>2</sup></td>
+                                    <td> <button class="rounded p-2 text-white font-semibold bg-blue-600">Covert to
+                                            m<sup>2</sup></button></td>
+                                    <td class="text-red-800 text-3xl cursor-pointer">&times;</td>
+                                </tr>
+                            </tbody> -->
+                        </table>
+                    </div>
                 </div>
             </div>
         </section>
