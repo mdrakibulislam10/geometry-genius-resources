@@ -1,7 +1,10 @@
 // get input value
 function getInputValue(inputId) {
     const inputField = document.getElementById(inputId);
-    return parseFloat(inputField.value);
+    const value = parseFloat(inputField.value);
+    inputField.value = "";
+
+    return value;
 };
 
 // get element value
@@ -27,7 +30,7 @@ function setResult(serialNum, name, area) {
             <td>${name}</td>
             <td>${area}cm<sup>2</sup></td>
             <td><button id="convert-btn" class="rounded p-2 text-white font-semibold bg-blue-600">Covert to m<sup>2</sup></button></td>
-            <td><button id="cose-btn" class="text-red-800 text-3xl cursor-pointer">&times;</button></td>
+            <td><button id="close-btn" class="text-red-800 text-3xl cursor-pointer">&times;</button></td>
         </tr>
     `
     calculationResults.appendChild(tBody);
