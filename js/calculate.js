@@ -63,7 +63,7 @@ document.getElementById("ellipse-calc-btn").addEventListener("click", function (
         alert("please input number above '0'!");
         return;
     };
-    const area = calcArea(parseFloat((Math.PI).toFixed(4)), axisA, axisB);
+    const area = calcArea(parseFloat((Math.PI).toFixed(2)), axisA, axisB);
     if (isNaN(area)) {
         alert("please input number!");
         return;
