@@ -5,6 +5,10 @@ let serial = 0;
 document.getElementById("triangle-calc-btn").addEventListener("click", function () {
     const base = getInputValue("triangle-first-input");
     const height = getInputValue("triangle-second-input");
+    if (base < 0 || height < 0) {
+        alert("please input number above '0'!");
+        return;
+    };
     const area = calcArea(0.5, base, height);
     const name = getElementValue("triangle-name");
 
@@ -15,6 +19,10 @@ document.getElementById("triangle-calc-btn").addEventListener("click", function 
 document.getElementById("rhombus-calc-btn").addEventListener("click", function () {
     const diagonals1 = getInputValue("rhombus-first-input");
     const diagonals2 = getInputValue("rhombus-second-input");
+    if (diagonals1 < 0 || diagonals2 < 0) {
+        alert("please input number above '0'!");
+        return;
+    };
     const area = calcArea(0.5, diagonals1, diagonals2);
     const name = getElementValue("rhombus-name");
 
@@ -25,6 +33,10 @@ document.getElementById("rhombus-calc-btn").addEventListener("click", function (
 document.getElementById("pentagon-calc-btn").addEventListener("click", function () {
     const perimeter = getInputValue("pentagon-first-input");
     const base = getInputValue("pentagon-second-input");
+    if (perimeter < 0 || base < 0) {
+        alert("please input number above '0'!");
+        return;
+    };
     const area = calcArea(0.5, perimeter, base);
     const name = getElementValue("pentagon-name");
 
@@ -35,6 +47,10 @@ document.getElementById("pentagon-calc-btn").addEventListener("click", function 
 document.getElementById("ellipse-calc-btn").addEventListener("click", function () {
     const axisA = getInputValue("ellipse-first-input");
     const axisB = getInputValue("ellipse-second-input");
+    if (axisA < 0 || axisB < 0) {
+        alert("please input number above '0'!");
+        return;
+    };
     const area = calcArea(parseFloat((Math.PI).toFixed(4)), axisA, axisB);
     const name = getElementValue("ellipse-name");
 
@@ -45,6 +61,10 @@ document.getElementById("ellipse-calc-btn").addEventListener("click", function (
 document.getElementById("rectangle-calc-btn").addEventListener("click", function () {
     const width = getInputValue("rectangle-first-input");
     const length = getInputValue("rectangle-second-input");
+    if (width < 0 || length < 0) {
+        alert("please input number above '0'!");
+        return;
+    };
     const area = calcArea2(width, length);
     const name = getElementValue("rectangle-name");
 
@@ -55,6 +75,10 @@ document.getElementById("rectangle-calc-btn").addEventListener("click", function
 document.getElementById("parallelogram-calc-btn").addEventListener("click", function () {
     const base = getInputValue("parallelogram-first-input");
     const height = getInputValue("parallelogram-second-input");
+    if (base < 0 || height < 0) {
+        alert("please input number above '0'!");
+        return;
+    };
     const area = calcArea2(base, height);
     const name = getElementValue("parallelogram-name");
 

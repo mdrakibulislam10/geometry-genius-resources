@@ -23,10 +23,14 @@ function calcArea(formula1stValue, input1stValue, input2ndValue) {
 function calcArea2(input1stValue, input2ndValue) {
     const area = input1stValue * input2ndValue;
     return parseFloat((area).toFixed(2));
-}
+};
 
 // set calculation result
 function setResult(serialNum, name, area) {
+    if (isNaN(area)) {
+        alert("please input number!");
+        return;
+    };
     const calculationResults = document.getElementById("calculation-results");
     const tBody = document.createElement("tbody");
     tBody.innerHTML = `
