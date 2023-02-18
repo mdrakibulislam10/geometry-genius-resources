@@ -43,3 +43,15 @@ function setResult(serialNum, name, area) {
     `
     calculationResults.appendChild(tBody);
 };
+
+// cards random bg color
+function randomColor() {
+    const randomBgCode = [];
+    for (let i = 0; i < 3; i++) {
+        const generateRandomBg = Math.floor(Math.random() * 255);
+        randomBgCode.push(generateRandomBg);
+    };
+    const randomBg = randomBgCode.join();
+
+    return randomBg;
+};
