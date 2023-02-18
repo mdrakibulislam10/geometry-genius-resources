@@ -26,8 +26,7 @@ function setResult(serialNum, name, area) {
     const tBody = document.createElement("tbody");
     tBody.innerHTML = `
         <tr>
-            <td>${serialNum}.</td>
-            <td>${name}</td>
+            <td>${serialNum}. ${name}</td>
             <td>${area}cm<sup>2</sup></td>
             <td><button id="convert-btn" class="rounded p-2 text-white font-semibold bg-blue-600">Covert to m<sup>2</sup></button></td>
             <td><button id="close-btn" class="text-red-800 text-3xl cursor-pointer">&times;</button></td>

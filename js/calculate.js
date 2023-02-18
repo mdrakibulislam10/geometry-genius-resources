@@ -24,3 +24,14 @@ document.getElementById("rhombus-calc-btn").addEventListener("click", function (
     setResult(serial += 1, name, area);
 });
 
+// pentagon handler
+document.getElementById("pentagon-calc-btn").addEventListener("click", function () {
+    const perimeter = getInputValue("pentagon-first-input");
+    const base = getInputValue("pentagon-second-input");
+    const area = calcArea(0.5, perimeter, base);
+    const name = getElementValue("pentagon-name");
+
+    setResult(serial += 1, name, area);
+});
+
+//
