@@ -13,12 +13,17 @@ function getElementValue(elementId) {
     return elementField.innerText;
 };
 
-// calculation area
+// calculation triangle, rhombus, pentagon, ellipse area
 function calcArea(formula1stValue, input1stValue, input2ndValue) {
     const area = formula1stValue * input1stValue * input2ndValue;
-
     return parseFloat((area).toFixed(2));
 };
+
+// calculation rectangle and parallelogram area
+function calcArea2(input1stValue, input2ndValue) {
+    const area = input1stValue * input2ndValue;
+    return parseFloat((area).toFixed(2));
+}
 
 // set calculation result
 function setResult(serialNum, name, area) {
@@ -27,7 +32,7 @@ function setResult(serialNum, name, area) {
     tBody.innerHTML = `
         <tr>
             <td>${serialNum}. ${name}</td>
-            <td>${area}cm<sup>2</sup></td>
+            <td>${area} cm<sup>2</sup></td>
             <td><button id="convert-btn" class="rounded p-2 text-white font-semibold bg-blue-600">Covert to m<sup>2</sup></button></td>
             <td><button id="close-btn" class="text-red-800 text-3xl cursor-pointer">&times;</button></td>
         </tr>
