@@ -191,12 +191,17 @@
                 <!-- calculation -->
                 <div class="border border-slate-400 h-screen rounded-lg">
                     <h3 class="font-semibold underline underline-offset-4 text-center mt-6">Area Calculation</h3>
+                    <p id="meter-result-box"
+                        class="text-center ml-auto mr-2 border w-2/5 mt-2 border-orange-400 rounded p-1">
+                        <span id="meter-result"></span> m<sup>2</sup>
+                    </p>
 
                     <div class="mt-4">
-                        <table id="calculation-results" class="table-compact w-full">
-                            <!-- <tbody>
-                                
-                            </tbody> -->
+                        <table class="table-compact w-full">
+                            <tbody id="calculation-results" class="close-btn">
+                                <!-- // -->
+
+                            </tbody>
                         </table>
                     </div>
                 </div>
@@ -209,6 +214,7 @@
     <script src="js/calculate.js"></script>
     <script src="js/blog.js"></script>
     <script src="js/cards.js"></script>
+    <script src="js/close.js"></script>
 </body>
 
 </html>

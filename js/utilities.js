@@ -27,23 +27,19 @@ function calcArea2(input1stValue, input2ndValue) {
 
 // set calculation result
 function setResult(serialNum, name, area) {
-    if (isNaN(area)) {
-        alert("please input number!");
-        return;
-    };
-    const calculationResults = document.getElementById("calculation-results");
-    const tBody = document.createElement("tbody");
-    tBody.innerHTML = `
-        <tr>
+    const tBody = document.getElementById("calculation-results");
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
             <td>${serialNum}. ${name}</td>
             <td>${area} cm<sup>2</sup></td>
             <td><button id="convert-btn" class="rounded p-2 text-white font-semibold bg-blue-600">Covert to m<sup>2</sup></button></td>
-            <td><button id="close-btn" class="text-red-800 text-3xl cursor-pointer">&times;</button></td>
-        </tr>
-    `
-    calculationResults.appendChild(tBody);
+            <td><button class="text-red-800 text-3xl">x</button></td>
+    `;
+
+    tBody.appendChild(tr);
 };
 
+// ..............................
 // cards random bg color
 function randomColor() {
     const randomBgCode = [];
@@ -54,4 +50,10 @@ function randomColor() {
     const randomBg = randomBgCode.join();
 
     return randomBg;
+};
+
+//......................................
+// click X btn to delete item
+function removeItem(item) {
+    item.parentNode.parentNode.style.display = "none";
 };

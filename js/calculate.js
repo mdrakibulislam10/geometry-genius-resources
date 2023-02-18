@@ -10,6 +10,10 @@ document.getElementById("triangle-calc-btn").addEventListener("click", function 
         return;
     };
     const area = calcArea(0.5, base, height);
+    if (isNaN(area)) {
+        alert("please input number!");
+        return;
+    };
     const name = getElementValue("triangle-name");
 
     setResult(serial += 1, name, area);
@@ -24,6 +28,10 @@ document.getElementById("rhombus-calc-btn").addEventListener("click", function (
         return;
     };
     const area = calcArea(0.5, diagonals1, diagonals2);
+    if (isNaN(area)) {
+        alert("please input number!");
+        return;
+    };
     const name = getElementValue("rhombus-name");
 
     setResult(serial += 1, name, area);
@@ -38,6 +46,10 @@ document.getElementById("pentagon-calc-btn").addEventListener("click", function 
         return;
     };
     const area = calcArea(0.5, perimeter, base);
+    if (isNaN(area)) {
+        alert("please input number!");
+        return;
+    };
     const name = getElementValue("pentagon-name");
 
     setResult(serial += 1, name, area);
@@ -52,6 +64,10 @@ document.getElementById("ellipse-calc-btn").addEventListener("click", function (
         return;
     };
     const area = calcArea(parseFloat((Math.PI).toFixed(4)), axisA, axisB);
+    if (isNaN(area)) {
+        alert("please input number!");
+        return;
+    };
     const name = getElementValue("ellipse-name");
 
     setResult(serial += 1, name, area);
@@ -66,6 +82,10 @@ document.getElementById("rectangle-calc-btn").addEventListener("click", function
         return;
     };
     const area = calcArea2(width, length);
+    if (isNaN(area)) {
+        alert("please input number!");
+        return;
+    };
     const name = getElementValue("rectangle-name");
 
     setResult(serial += 1, name, area);
@@ -80,6 +100,10 @@ document.getElementById("parallelogram-calc-btn").addEventListener("click", func
         return;
     };
     const area = calcArea2(base, height);
+    if (isNaN(area)) {
+        alert("please input number!");
+        return;
+    };
     const name = getElementValue("parallelogram-name");
 
     setResult(serial += 1, name, area);
