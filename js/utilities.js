@@ -17,7 +17,7 @@ function getElementValue(elementId) {
 function calcArea(formula1stValue, input1stValue, input2ndValue) {
     const area = formula1stValue * input1stValue * input2ndValue;
 
-    return area;
+    return parseFloat((area).toFixed(2));
 };
 
 // set calculation result

@@ -34,4 +34,12 @@ document.getElementById("pentagon-calc-btn").addEventListener("click", function 
     setResult(serial += 1, name, area);
 });
 
-//
+// ellipse handler
+document.getElementById("ellipse-calc-btn").addEventListener("click", function () {
+    const axisA = getInputValue("ellipse-first-input");
+    const axisB = getInputValue("ellipse-second-input");
+    const area = calcArea(parseFloat((Math.PI).toFixed(2)), axisA, axisB);
+    const name = getElementValue("ellipse-name");
+
+    setResult(serial += 1, name, area);
+});
