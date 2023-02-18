@@ -50,3 +50,13 @@ document.getElementById("rectangle-calc-btn").addEventListener("click", function
 
     setResult(serial += 1, name, area);
 });
+
+// parallelogram handler
+document.getElementById("parallelogram-calc-btn").addEventListener("click", function () {
+    const base = getInputValue("parallelogram-first-input");
+    const height = getInputValue("parallelogram-second-input");
+    const area = calcArea2(base, height);
+    const name = getElementValue("parallelogram-name");
+
+    setResult(serial += 1, name, area);
+});
